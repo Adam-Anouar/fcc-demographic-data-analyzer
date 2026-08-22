@@ -1,7 +1,7 @@
 import pandas as pd
 
 def calculate_demographic_data(print_data=True):
-    df = pd.read_csv('adult.data.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/freeCodeCamp/boilerplate-demographic-data-analyzer/main/adult.data.csv')
 
     race_count = df['race'].value_counts()
     average_age_men = round(df[df['sex'] == 'Male']['age'].mean(), 1)
